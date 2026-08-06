@@ -1,4 +1,4 @@
-# Ollama Studio[cite: 1]
+# Ollama Studio
 
 Ollama Studio is a modern, responsive desktop application built in Rust using the `eframe` and `egui` framework designed to provide a seamless interface for interacting with local Large Language Models (LLMs) via Ollama[cite: 1].
 
