@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Ollama Studio
+Comment=Desktop GUI client for Ollama LLMs
+Exec=ollama-studio
+Icon=ollama-studio
+Terminal=false
+Categories=Utility;Development;
