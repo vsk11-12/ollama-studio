@@ -1,2 +1,7 @@
 /target
 chats.json
+chats.json
+*.msi
+pkg/
+src/ollama-studio-app
+*.pkg.tar.zst

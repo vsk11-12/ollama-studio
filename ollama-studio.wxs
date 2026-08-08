@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="Ollama Studio" Language="1033" Version="0.1.0" Manufacturer="vsk11-12" UpgradeCode="a1b2c3d4-e5f6-7890-abcd-ef1234567890">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+    <MediaTemplate EmbedCab="yes" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="APPLICATIONROOTDIRECTORY" Name="Ollama Studio">
+          <Component Id="MainExecutable" Guid="b2c3d4e5-f6a7-8901-bcde-f12345678901">
+            <File Id="OllamaStudioEXE" Source="target/x86_64-pc-windows-gnu/release/ollama-studio.exe" KeyPath="yes" />
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <Feature Id="MainFeature" Title="Ollama Studio" Level="1">
+      <ComponentRef Id="MainExecutable" />
+    </Feature>
+  </Product>
+</Wix>
